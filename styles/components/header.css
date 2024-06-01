@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 9999;
+  /* border: 1px dashed greenyellow; */
+}
+
+/* by default top nav menu will be hidden and will only shown when >= 760px */
+.header__menu {
+  display: none;
+  /* border: 1px dashed darkorange; */
+}
+
+.header__bars {
+  display: block;
+  color: var(--clr-light);
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+  
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+  
+} */
+
+/* md */
+@media (min-width: 760px) {
+  .header__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* flex-direction: row; */
+    padding: 0;
+    gap: 2em;
+  }
+
+  .header__link {
+    font-size: var(--size-xs);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-slate600);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+  }
+
+  .header__link:hover {
+    color: var(--clr-rose);
+  }
+
+  /* best way to create vertical line for decoration */
+  .header__line {
+    border: 1px solid var(--clr-slate800);
+    padding-top: 1.5em;
+    /* padding-bottom: 1.5rem; */
+  }
+
+  .header__sun {
+    /* block is required to make it aligned with other items in list */
+    /* by default button have inline block style */
+    display: block;
+    color: var(--clr-slate600);
+    width: var(--size-base);
+    height: var(--size-base);
+  }
+
+  .header__resume {
+    font-size: var(--size-xs);
+  }
+
+  /* to hide hamburger btn in larger display */
+  .header__bars {
+    display: none;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .header__link {
+    font-size: var(--size-sm);
+  }
+
+  .header__sun {
+    /* block is required to make it aligned with other items in list */
+    /* by default button have inline block style */
+    width: var(--size-xl);
+    height: var(--size-xl);
+  }
+
+  .header__resume {
+    font-size: var(--size-sm);
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+  
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  
+} */

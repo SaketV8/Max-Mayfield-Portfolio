@@ -1,0 +1,182 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 1px dashed darkorange; */
+}
+
+.about__title {
+  font-size: var(--size-2xl);
+  color: var(--light);
+}
+
+.about__description {
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+
+.about__hr {
+  border-color: var(--clr-slate9800);
+}
+
+.about__subtitle {
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+}
+
+.about__ul {
+  /* we are using flex here for gap property */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* using emoji with unicode value */
+  /* replace U+ --> \ in emoji unicode */
+  /* list-style-type: "\1F44D"; */
+  list-style-type: "\1F525";
+  /* by default padding-left: 2.5rem; */
+  padding-left: 1em;
+  flex: 1;
+  /* border: 1px dashed cyan; */
+}
+
+.about__list {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+
+/* for adding spacing between emoji and text */
+.about__list::before {
+  content: "";
+  /* here both left and right will work */
+  /* because it is being applied before the content */
+  /* margin-right: 0.5em; */
+  margin-left: 0.5em;
+  /* border: 1px dashed cyan; */
+}
+
+.about__ul-container {
+  display: flex;
+  /* justify-content: space-between; */
+  /* gap: 5em; */
+  /* instead we gonna use flex: 1; in child elem */
+  /* in about__ul */
+}
+
+/* div which is containing image of about section */
+.about__img-wrapper {
+  /* to center image */
+  margin: 0 auto;
+  /* to center image */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border: 1px dashed darkorange; */
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .about {
+    gap: 1.5rem;
+  }
+
+  .about__content {
+    gap: 1.5rem;
+  }
+
+  .about__title {
+    font-size: var(--size-3xl);
+  }
+
+  .about__description {
+    font-size: var(--size-base);
+  }
+
+  .about__subtitle {
+    font-size: var(--size-base);
+  }
+
+  .about__list {
+    font-size: var(--size-base);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .about__img {
+    /* set width same as previous breakpoint i.e at 475px */
+    /* divide value by 16 to convert from px --> rem */
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+/* md */
+/* @media (min-width: 760px) {
+  
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    align-items: center;
+  }
+
+  .about__title {
+    font-size: var(--size-4xl);
+  }
+
+  .about__description {
+    font-size: var(--size-lg);
+  }
+
+  .about__subtitle {
+    font-size: var(--size-lg);
+  }
+
+  .about__list {
+    font-size: var(--size-lg);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .about__content {
+    gap: 2rem;
+  }
+
+  .about__title {
+    font-size: var(--size-5xl);
+  }
+
+  .about__description {
+    font-size: var(--size-xl);
+  }
+
+  .about__subtitle {
+    font-size: var(--size-xl);
+  }
+
+  .about__list {
+    font-size: var(--size-xl);
+  }
+
+  .about__img {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+  
+} */
