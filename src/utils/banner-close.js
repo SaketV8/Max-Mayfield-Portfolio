@@ -5,7 +5,7 @@ const bannerClose = () => {
 
     closeBtn.addEventListener("click", () => {
         bannerView.style.display = "none";
-        console.log("Banner Closed");
+        // console.log("Banner Closed");
       });
 }
 

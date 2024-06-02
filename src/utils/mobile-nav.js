@@ -15,7 +15,7 @@ const mobileNav = () => {
       mobileNav.style.display = "none";
       document.body.style.overflowY = "visible";
     }
-    console.log("Header btn Clicked", isMobileNavOpen);
+    // console.log("Header btn Clicked", isMobileNavOpen);
   });
   
   mobileLinks.forEach((link) => {
