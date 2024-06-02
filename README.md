@@ -36,8 +36,8 @@ Portfolio website for Max Mayfield from Stranger Things
 - [ ] Lazy Loading of Images
 - [ ] Custom Scrollbar
 - [x] Under Contruction Banner [*1 June, 2024*]
+- [x] Deploy to Vercel
 - [ ] Deploy to Github Page
-- [ ] Deoloy to Vercel
 
 ## Showcase
 
