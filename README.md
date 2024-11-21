@@ -8,7 +8,7 @@
 
 <img src="https://img.shields.io/badge/Development%20-in%20progress-eed49f?style=for-the-badge" alt="Development In Progress">
 
-<img src="https://img.shields.io/badge/Showcase%20Project%20-for%20ABES%20ACM%20Recruitment-ed8796?style=for-the-badge" alt="Showcase Project">
+<!-- <img src="https://img.shields.io/badge/Showcase%20Project%20-for%20ABES%20ACM%20Recruitment-ed8796?style=for-the-badge" alt="Showcase Project"> -->
 
 
 <img src="https://img.shields.io/badge/License-MIT-a6da95.svg?style=for-the-badge" alt="MIT License">
